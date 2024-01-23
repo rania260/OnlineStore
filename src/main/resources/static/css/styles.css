@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    color: #4609b9;
+}
+
+
+h2,h3{
+    color:#7551b8
+}
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th{
+    background-color: #c5acd5;
+}
+
+/* Error message styles */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 200px;
+    padding: 5px;
+}
+
+.delete-form {
+    display: inline-block;
+    margin-left: 5px;
+}
+.edit-form {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/* Button styles */
+.add-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #aa24cb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+button {
+    padding: 5px 10px;
+    background-color: #746f78;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+

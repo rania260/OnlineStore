@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Welcome to Your Storage</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img th:src="@{/images/logo.png}" alt="Online Store Logo" class="logo">
+    </header>
+    <h2>Welcome to Your Storage</h2>
+    <p>This is your online store's storage.</p>
+
+    <a th:href="@{/products}" class="manage-button">Product Management</a>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Category</title>
+    <link rel="stylesheet" type="text/css" th:href="@{../../css/styles.css}">
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<a th:href="@{/products}">Back</a>
+<h3>Create Category</h3>
+<form th:action="@{/categories/create}" method="post" th:object="${categoryForm}">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" th:field="*{name}">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="error"></span>
+    </div>
+    <button type="submit">Create</button>
+</form>
+</body>
+</html>

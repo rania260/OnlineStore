@@ -1,0 +1,21 @@
+<!-- header.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Product List</title>
+</head>
+
+<body>
+    <header>
+        <img th:src="@{/images/logo.png}" alt="Online Store Logo" class="logo">
+        <h1>Product management</h1>
+        <Strong>Welcome <span sec:authentication="name"></span></Strong> 
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+         </form>
+            
+    </header>
+</body>
+
+</html>
